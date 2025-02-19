@@ -1,0 +1,127 @@
+/* App.css (Display Only) */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#addTask {
+    background-color: #764ba2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+#addTask:hover {
+    background-color: #667eea;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    background-color: #f8f8f8;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    position: relative; /* For delete button positioning */
+}
+
+#taskList li:hover {
+    background-color: #eee;
+}
+
+#taskList li input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#taskList li.completed { /* Style for completed tasks */
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.clear-all {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.clear-all-button {
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.clear-all-button:hover {
+    background-color: #c9302c;
+}
